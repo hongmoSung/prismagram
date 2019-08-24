@@ -24,7 +24,7 @@ const sendMail = email => {
 
 export const sendSecretMail = (adress, secret) => {
     const email = {
-        from: "tesung30@naver.com",
+        from: process.env.SENDGRID_USERNAME,
         to: adress,
         subject: "🔒Login Secret for Prismagram🔒",
         html: `Hello! Your login secret it ${secret}.<br/>Copy & Paste on the app/website to log in`
