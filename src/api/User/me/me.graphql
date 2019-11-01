@@ -1,3 +1,7 @@
+type ProfileResponse {
+    user: User!
+    posts: [Post!]!
+}
 type Query {
-    me: User!
+    me: ProfileResponse!
 }
