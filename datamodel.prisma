@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  avatar: String
+  avatar: String @default(value: "https://avatars1.githubusercontent.com/u/22293700?s=40&v=4")
   username: String! @unique
   email: String! @unique
   firstName: String @default(value: "")
